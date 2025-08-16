@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Header from './Header';
 import Footer from './Footer';
 import Index from './Index';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './About';
 import Service from './Service';
@@ -21,7 +22,7 @@ import Contact from './Contact';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/portfolio">
         <Header />
         <Routes>
           <Route path='/' element={<Index />} />

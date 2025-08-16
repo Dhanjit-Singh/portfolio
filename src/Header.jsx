@@ -1,23 +1,40 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from 'react-router-dom';
 
-
 function Header() {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const closeMenu = () => {
+        setShowMenu(false);
+    };
+
+    const handleToggle = () => {
+        setShowMenu(!showMenu);
+    };
+
     return (
         <>
-            <nav class="navbar navbar-expand-lg sticky-top">
-                <div class="container">
-                    <Link class="navbar-brand fw-bold" to="/">Home</Link>
-                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon text-white"></span>
+            <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+                <div className="container">
+                    <Link className="navbar-brand fw-bold" to="/" onClick={closeMenu}>Home</Link>
+                    <button className="navbar-toggler" type="button" onClick={handleToggle}>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><Link class="nav-link" to="/about">About</Link></li>
-                            <li class="nav-item"><Link class="nav-link" to="/service">Services</Link></li>
-                            <li class="nav-item"><Link class="nav-link" to="/portfolio">Portfolio</Link></li>
-                            <li class="nav-item"><Link class="nav-link" to="/contact">Contact</Link></li>
+                    <div className={`collapse navbar-collapse ${showMenu ? "show" : ""}`}>
+                        <ul className="navbar-nav ms-auto">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/about" onClick={closeMenu}>About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/service" onClick={closeMenu}>Services</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/portfolio" onClick={closeMenu}>Portfolio</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contact" onClick={closeMenu}>Contact</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -10,7 +10,9 @@ function CustomCRMDetails() {
                     {/* Project Title & Image  */}
                     <div class="row mb-4">
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <img src={myPortfolio4} class="img-fluid rounded shadow" alt="Custom CRM Tool" />
+                            <div className="card">
+                                <img src={myPortfolio4} class="img-fluid rounded shadow" alt="Custom CRM Tool" />
+                            </div>
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2 class="mb-3">Custom CRM Tool</h2>
@@ -46,14 +48,16 @@ function CustomCRMDetails() {
 
                         {/* Optional Sidebar (Project Meta)  */}
                         <div class="col-lg-4 mt-5 mt-lg-0">
-                            <div class="border rounded p-4 shadow-sm bg-light">
-                                <h6 class="text-uppercase text-muted">Project Info</h6>
-                                <ul class="list-unstyled mt-3">
-                                    <li><strong>Client:</strong> Local Business</li>
-                                    <li><strong>Year:</strong> 2024</li>
-                                    <li><strong>Category:</strong> CRM Tool</li>
-                                    <li><strong>Status:</strong> Completed</li>
-                                </ul>
+                            <div className="card">
+                                <div class="border rounded p-4 shadow-sm bg-light">
+                                    <h6 class="text-uppercase text-muted">Project Info</h6>
+                                    <ul class="list-unstyled mt-3">
+                                        <li><strong>Client:</strong> Local Business</li>
+                                        <li><strong>Year:</strong> 2024</li>
+                                        <li><strong>Category:</strong> CRM Tool</li>
+                                        <li><strong>Status:</strong> Completed</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
