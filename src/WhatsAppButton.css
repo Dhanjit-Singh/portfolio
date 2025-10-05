@@ -1,0 +1,87 @@
+/* Wrapper container to handle hover */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-float {
+    background-color: #25d366;
+    color: #fff;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    gap: 8px;
+    overflow: hidden;
+    transition: width 0.4s ease, background-color 0.2s;
+    width: 50px;
+}
+
+.whatsapp-float.expanded {
+    width: 170px;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+}
+
+.whatsapp-text {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Tooltip Styling */
+.whatsapp-tooltip {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Tooltip arrow */
+.whatsapp-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+/* Show tooltip when hovering the container (not just the icon) */
+.whatsapp-container:hover .whatsapp-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}

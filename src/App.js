@@ -16,6 +16,7 @@ import AdminDashboardDetails from './AdminDashboardDetails';
 import CustomCRMDetails from './CustomCRMDetails';
 import BlogCMSDetails from './BlogCMSDetails';
 import Contact from './Contact';
+import WhatsAppButton from './WhatsAppButton';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
+        <WhatsAppButton />
       </Router>
     </>
   );
