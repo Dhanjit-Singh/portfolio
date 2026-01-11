@@ -287,7 +287,7 @@ function Index() {
                             <div className="card shadow-sm p-3 bg-white rounded-3 h-100">
                                 <i className="bi bi-telephone-fill text-success fs-4 mb-2"></i>
                                 <h6 className="fw-bold">Phone</h6>
-                                <p><a>+91 80023 82823</a></p>
+                                <p><a href="tel:+918002382823">+91 80023 82823</a></p>
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
