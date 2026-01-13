@@ -1,7 +1,46 @@
-
+import { useEffect, useState } from "react";
 import Waves from "./components/Waves";
 
 const Hero = () => {
+
+    const text = "Dhanjit Singh";
+    const typingSpeed = 120;
+    const deletingSpeed = 80;
+    const pauseTime = 1000;
+
+    const [displayText, setDisplayText] = useState("");
+    const [index, setIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+
+    useEffect(() => {
+        let timer;
+
+        if (!isDeleting) {
+            
+            if (index < text.length) {
+                timer = setTimeout(() => {
+                    setDisplayText(text.slice(0, index + 1));
+                    setIndex(index + 1);
+                }, typingSpeed);
+            } else {
+                
+                timer = setTimeout(() => setIsDeleting(true), pauseTime);
+            }
+        } else {
+            
+            if (index > 0) {
+                timer = setTimeout(() => {
+                    setDisplayText(text.slice(0, index - 1));
+                    setIndex(index - 1);
+                }, deletingSpeed);
+            } else {
+                setIsDeleting(false);
+            }
+        }
+
+        return () => clearTimeout(timer);
+    }, [index, isDeleting]);
+
     return (
         <>
             <div style={{ height: "100vh", position: "relative" }}>
@@ -33,9 +72,13 @@ const Hero = () => {
                         backgroundColor: "#070505ff"
                     }}
                 >
-                    <div class="container text-center">
-                        <h1>Hello, I'm <span class="text-warning">Dhanjit Singh</span></h1>
-                        <p class="lead">Full-Stack Web Developer | React, Node js & Laravel Specialist</p>
+                    <div className="container text-center">
+                        <h1>Hello, I'm &nbsp;
+                            <span className="text-warning">{displayText}
+                                <span className="cursor">|</span>
+                            </span>
+                        </h1>
+                        <p className="lead">Full-Stack Web Developer | React, Node js & Laravel Specialist</p>
                     </div>
                 </div>
             </div>
