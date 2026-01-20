@@ -33,6 +33,9 @@ function Header() {
                                 <Link className="nav-link" to="/portfolio" onClick={closeMenu}>Portfolio</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link" to="/projects" onClick={closeMenu}>Projects</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/contact" onClick={closeMenu}>Contact</Link>
                             </li>
                         </ul>

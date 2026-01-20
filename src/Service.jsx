@@ -4,12 +4,14 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaCartPlus } from "react-icons/fa";
 import { FaPlug } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
+import PageFlip from "./PageFlip";
 
 
 
 function Service() {
     return (
         <>
+        <PageFlip />
             <section class="py-5 bg-light">
                 <div class="container">
                     <h2 class="section-title text-center mb-4 fw-bold">Services I Offer</h2>

@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './About';
 import Service from './Service';
 import Portfolio from './Portfolio';
+import Projects from './Projects';
 import InventoryDetails from './InventoryDetails';
 import ECommerceDetails from "./EcommerceDetails";
 import JobPortalDetails from "./JobPortalDetails";
@@ -30,6 +31,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/service' element={<Service />} />
           <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/e-commerce-detail' element={<ECommerceDetails />} />
           <Route path='/job-portal-detail' element={<JobPortalDetails />} />
           <Route path='/admin-dashboard-details' element={<AdminDashboardDetails />} />

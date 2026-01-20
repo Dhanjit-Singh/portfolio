@@ -1,9 +1,13 @@
 import about from "./assets/images/about.jpg";
 import { Link } from "react-router-dom";
 
+import PageFlip from "./PageFlip";
+
 function About() {
+
     return (
         <>
+            <PageFlip />
             <section class="py-5 bg-white position-relative">
                 <div class="container">
                     <div class="row align-items-center g-5">

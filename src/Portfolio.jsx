@@ -7,9 +7,13 @@ import myPortfolio4 from "./assets/images/my-portfolio4.jpg";
 import myPortfolio5 from "./assets/images/my-portfolio5.jpg";
 import myPortfolio6 from "./assets/images/my-portfolio6.webp";
 
+import PageFlip from "./PageFlip";
+
 function Portfolio() {
     return (
         <>
+            <PageFlip />
+
             <section class="py-5">
                 <div class="container">
                     <h2 class="section-title text-center mb-5">My Portfolio</h2>

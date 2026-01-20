@@ -2,6 +2,8 @@ import { React, useState } from "react";
 import Swal from 'sweetalert2';
 import CircularProgress from '@mui/material/CircularProgress';
 
+import PageFlip from "./PageFlip";
+
 
 function Contact() {
 
@@ -106,6 +108,8 @@ function Contact() {
 
     return (
         <>
+            <PageFlip />
+
             <section className="py-5" style={{ background: "linear-gradient(135deg, #f8f9fa, #e9ecef)" }}>
                 <div className="container">
                     <h2 className="section-title text-center mb-3">Get in Touch</h2>
