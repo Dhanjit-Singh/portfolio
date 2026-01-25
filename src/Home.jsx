@@ -112,23 +112,14 @@ function Index() {
             {/* Hero section  */}
             <Hero />
 
-            {/* Hero section  */}
-            {/* <section class="hero main-page">
-                <div class="container text-center">
-                    <h1>Hello, I'm <span class="text-warning">Dhanjit Singh</span></h1>
-                    <p class="lead">Full-Stack Web Developer | Laravel & React Specialist</p>
-                    <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Let's Work Together</a>
-                </div>
-            </section> */}
-
             {/* About section  */}
-            <section id="about" class="py-5 about-section">
-                <div class="container text-center">
-                    <h2 class="section-title">About Me</h2>
-                    <img src={profileImg3} alt="Dhanjit Singh" class="rounded-circle shadow mb-4" width="150" height="150" />
-                    <p class="about-text">
+            <section id="about" className="py-5 about-section">
+                <div className="container text-center">
+                    <h2 className="section-title">About Me</h2>
+                    <img src={profileImg3} alt="Dhanjit Singh" className="rounded-circle shadow mb-4" width="150" height="150" />
+                    <p className="about-text">
                         I'm a passionate <strong>Full-Stack Web Developer</strong> with a strong background in <span
-                            class="text-warning">Laravel</span> and <span class="text-info">React</span>.
+                            className="text-warning">Laravel</span> and <span className="text-info">React</span>.
                         I help businesses craft fast, secure, and scalable web solutions. With clean code and thoughtful design,
                         I aim to deliver seamless user experiences and real results.
                     </p>
@@ -136,27 +127,27 @@ function Index() {
             </section>
 
             {/* Services section */}
-            <section id="services" class="py-5 bg-light services-section">
-                <div class="container">
-                    <h2 class="section-title text-center">Services</h2>
-                    <div class="row text-center">
-                        <div class="col-md-4 mb-4">
-                            <div class="service-card p-4 shadow-lg border-0 rounded">
-                                <i class="fas fa-server fa-3x text-primary mb-3"></i>
+            <section id="services" className="py-5 bg-light services-section">
+                <div className="container">
+                    <h2 className="section-title text-center">Services</h2>
+                    <div className="row text-center">
+                        <div className="col-md-4 mb-4">
+                            <div className="service-card p-4 shadow-lg border-0 rounded">
+                                <i className="fas fa-server fa-3x text-primary mb-3"></i>
                                 <h5>Laravel Backend</h5>
                                 <p>Powerful APIs, authentication systems, admin panels, and robust backend logic.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="service-card p-4 shadow-lg border-0 rounded">
-                                <i class="fab fa-react fa-3x text-info mb-3"></i>
+                        <div className="col-md-4 mb-4">
+                            <div className="service-card p-4 shadow-lg border-0 rounded">
+                                <i className="fab fa-react fa-3x text-info mb-3"></i>
                                 <h5>React Frontend</h5>
                                 <p>Dynamic SPAs, fast UI components, modern responsive design using ReactJS.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="service-card p-4 shadow-lg border-0 rounded">
-                                <i class="fas fa-laptop-code fa-3x text-success mb-3"></i>
+                        <div className="col-md-4 mb-4">
+                            <div className="service-card p-4 shadow-lg border-0 rounded">
+                                <i className="fas fa-laptop-code fa-3x text-success mb-3"></i>
                                 <h5>Full-Stack Projects</h5>
                                 <p>End-to-end solutions from idea to deployment, crafted with scalability.</p>
                             </div>
@@ -166,33 +157,33 @@ function Index() {
             </section>
 
             {/* Portfolio section  */}
-            <section id="portfolio" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">Portfolio</h2>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="card h-100 shadow-lg border-0">
-                                <div class="ratio ratio-4x3">
-                                    <img src={portfolio1} class="card-img-top img-fluid object-fit-cover"
+            <section id="portfolio" className="py-5">
+                <div className="container">
+                    <h2 className="section-title">Portfolio</h2>
+                    <div className="row">
+                        <div className="col-md-6 mb-4">
+                            <div className="card h-100 shadow-lg border-0">
+                                <div className="ratio ratio-4x3">
+                                    <img src={portfolio1} className="card-img-top img-fluid object-fit-cover"
                                         alt="E-Commerce App" style={{ width: "100%", height: "100%" }} />
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">E-Commerce Web App</h5>
-                                    <p class="card-text">React frontend with Laravel backend, secure checkout, admin dashboard.
+                                <div className="card-body">
+                                    <h5 className="card-title">E-Commerce Web App</h5>
+                                    <p className="card-text">React frontend with Laravel backend, secure checkout, admin dashboard.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6 mb-4">
-                            <div class="card h-100 shadow-lg border-0">
-                                <div class="ratio ratio-4x3">
-                                    <img src={portfolio2} class="card-img-top img-fluid object-fit-cover"
+                        <div className="col-md-6 mb-4">
+                            <div className="card h-100 shadow-lg border-0">
+                                <div className="ratio ratio-4x3">
+                                    <img src={portfolio2} className="card-img-top img-fluid object-fit-cover"
                                         alt="Job Portal" style={{ width: "100%", height: "100%" }} />
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Job Board Application</h5>
-                                    <p class="card-text">Job posting, resume upload, application tracking system – full stack
+                                <div className="card-body">
+                                    <h5 className="card-title">Job Board Application</h5>
+                                    <p className="card-text">Job posting, resume upload, application tracking system – full stack
                                         solution.</p>
                                 </div>
                             </div>
@@ -211,36 +202,36 @@ function Index() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="card shadow-lg border-0 rounded-4 p-4">
-                                <form method="post" onSubmit={handleSubmit} enctype="text/plain">
+                                <form method="post" onSubmit={handleSubmit} encType="text/plain">
                                     <div className="mb-3">
-                                        <label for="name" className="form-label">Your Name</label>
+                                        <label htmlFor="name" className="form-label">Your Name</label>
                                         <input type="text" name="name" onChange={handleInputs} id="name" className="form-control" placeholder="Enter name" />
                                         {errors.name && <small className="text-danger">{errors.name}</small>}
                                     </div>
 
                                     <div className="mb-3">
-                                        <label for="email" className="form-label">Your Email</label>
+                                        <label htmlFor="email" className="form-label">Your Email</label>
                                         <input type="text" name="email" onChange={handleInputs} id="email" className="form-control"
                                             placeholder="Enter email id" />
                                         {errors.email && <small className="text-danger">{errors.email}</small>}
                                     </div>
 
                                     <div className="mb-3">
-                                        <label for="email" className="form-label">Your Phone</label>
+                                        <label htmlFor="email" className="form-label">Your Phone</label>
                                         <input type="text" name="phone" onChange={handleInputs} id="phone" className="form-control"
                                             placeholder="Enter phone number" />
                                         {errors.phone && <small className="text-danger">{errors.phone}</small>}
                                     </div>
 
                                     <div className="mb-3">
-                                        <label for="subject" className="form-label">Subject</label>
+                                        <label htmlFor="subject" className="form-label">Subject</label>
                                         <input type="text" name="subject" onChange={handleInputs} id="subject" className="form-control"
                                             placeholder="Let’s build something great" />
                                         {errors.subject && <small className="text-danger">{errors.subject}</small>}
                                     </div>
 
                                     <div className="mb-4">
-                                        <label for="message" className="form-label">Your Message</label>
+                                        <label htmlFor="message" className="form-label">Your Message</label>
                                         <textarea name="message" onChange={handleInputs} id="message" className="form-control" rows="5"
                                             placeholder="Describe your project or say hello..."></textarea>
                                         {errors.message && <small className="text-danger">{errors.message}</small>}

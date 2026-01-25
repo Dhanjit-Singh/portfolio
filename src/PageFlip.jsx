@@ -3,12 +3,6 @@ import React from "react";
 import "./PageFlip.css";
 
 // Import your images (adjust paths as needed)
-import img1 from "./assets/images/main-page-bg.jpg";
-import img2 from "./assets/images/about-bg.jpg";
-import image1 from "./assets/images/portfolio1.avif";
-import image2 from "./assets/images/infotech.png";
-import image3 from "./assets/images/theproshop.png";
-import image4 from "./assets/images/profile-img3.jpg";
 
 import flipImg1 from "./assets/images/flip-img1.jpeg";
 import flipImg2 from "./assets/images/flip-img2.jpg";
@@ -37,14 +31,41 @@ const Page = React.forwardRef((props, ref) => {
 });
 
 const PageFlip = () => {
+    // const isMobile = window.innerWidth < 480;
+    const width = window.innerWidth;
+
+    let bookWidth = 750;
+    let bookHeight = 450;
+
+    if (width < 480) {
+        // Mobile
+        bookWidth = 300;
+        bookHeight = 200;
+    } else if (width < 768) {
+        // Tablet
+        bookWidth = 500;
+        bookHeight = 320;
+    } else if (width < 1500) {
+        // Laptop
+        bookWidth = 750;
+        bookHeight = 450;
+    } else {
+        // Large screen / Desktop
+        bookWidth = 750;
+        bookHeight = 450;
+    }
+    
     return (
         <div className="flipbook-container">
             <HTMLFlipBook
-                width={750}
-                height={450}
+                // width={isMobile ? 300 : 750}
+                // height={isMobile ? 200 : 450}
+                width={bookWidth}
+                height={bookHeight}
                 maxWidth={1000}
                 maxHeight={450}
                 showCover={false} // Disable cover mode
+                usePortrait={false}
                 flippingTime={1000}
                 style={{ margin: "0 auto" }}
                 maxShadowOpacity={0.5}

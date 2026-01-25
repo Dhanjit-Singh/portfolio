@@ -14,83 +14,83 @@ function Portfolio() {
         <>
             <PageFlip />
 
-            <section class="py-5">
-                <div class="container">
-                    <h2 class="section-title text-center mb-5">My Portfolio</h2>
-                    <div class="row g-4">
+            <section className="py-5">
+                <div className="container">
+                    <h2 className="section-title text-center mb-5">My Portfolio</h2>
+                    <div className="row g-4">
 
                         {/* Project 1  */}
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src={myPortfolio1} class="card-img-top" alt="E-Commerce Web App" />
-                                <div class="card-body">
-                                    <h5 class="card-title">E-Commerce Web App</h5>
-                                    <p class="card-text">React + Laravel project with cart, checkout, and admin dashboard.</p>
-                                    <Link to="/e-commerce-detail" class="btn btn-outline-dark btn-sm">View Details</Link>
+                        <div className="col-md-6 col-lg-4">
+                            <div className="card h-100 shadow-sm">
+                                <img src={myPortfolio1} className="card-img-top" alt="E-Commerce Web App" />
+                                <div className="card-body">
+                                    <h5 className="card-title">E-Commerce Web App</h5>
+                                    <p className="card-text">React + Laravel project with cart, checkout, and admin dashboard.</p>
+                                    <Link to="/e-commerce-detail" className="btn btn-outline-dark btn-sm">View Details</Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Project 2  */}
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src={myPortfolio2} class="card-img-top" alt="Job Board Platform" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Job Board Platform</h5>
-                                    <p class="card-text">Full-stack job posting platform with resume upload & admin panel.</p>
-                                    <Link to="/job-portal-detail" class="btn btn-outline-dark btn-sm">View Details</Link>
+                        <div className="col-md-6 col-lg-4">
+                            <div className="card h-100 shadow-sm">
+                                <img src={myPortfolio2} className="card-img-top" alt="Job Board Platform" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Job Board Platform</h5>
+                                    <p className="card-text">Full-stack job posting platform with resume upload & admin panel.</p>
+                                    <Link to="/job-portal-detail" className="btn btn-outline-dark btn-sm">View Details</Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Project 3  */}
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src={myPortfolio3} class="card-img-top" alt="Admin Dashboard" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Admin Dashboard</h5>
-                                    <p class="card-text">Clean Laravel-powered backend dashboard with data analytics and
+                        <div className="col-md-6 col-lg-4">
+                            <div className="card h-100 shadow-sm">
+                                <img src={myPortfolio3} className="card-img-top" alt="Admin Dashboard" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Admin Dashboard</h5>
+                                    <p className="card-text">Clean Laravel-powered backend dashboard with data analytics and
                                         role-based access.</p>
-                                    <Link to="/admin-dashboard-details" class="btn btn-outline-dark btn-sm">View Details</Link>
+                                    <Link to="/admin-dashboard-details" className="btn btn-outline-dark btn-sm">View Details</Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Project 4  */}
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src={myPortfolio4} class="card-img-top" alt="CRM Tool" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Custom CRM Tool</h5>
-                                    <p class="card-text">Built for a local business to manage leads, tasks, and follow-ups with
+                        <div className="col-md-6 col-lg-4">
+                            <div className="card h-100 shadow-sm">
+                                <img src={myPortfolio4} className="card-img-top" alt="CRM Tool" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Custom CRM Tool</h5>
+                                    <p className="card-text">Built for a local business to manage leads, tasks, and follow-ups with
                                         notifications.</p>
-                                    <Link to="/custom-crm-details" class="btn btn-outline-dark btn-sm">View Details</Link>
+                                    <Link to="/custom-crm-details" className="btn btn-outline-dark btn-sm">View Details</Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Project 5  */}
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src={myPortfolio5} class="card-img-top" alt="Blog CMS" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Blog CMS</h5>
-                                    <p class="card-text">Custom content management system using Laravel with image uploads, SEO,
+                        <div className="col-md-6 col-lg-4">
+                            <div className="card h-100 shadow-sm">
+                                <img src={myPortfolio5} className="card-img-top" alt="Blog CMS" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Blog CMS</h5>
+                                    <p className="card-text">Custom content management system using Laravel with image uploads, SEO,
                                         and tags.</p>
-                                    <Link to="/blog-cms-details" class="btn btn-outline-dark btn-sm">View Details</Link>
+                                    <Link to="/blog-cms-details" className="btn btn-outline-dark btn-sm">View Details</Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Project 6  */}
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src={myPortfolio6} class="card-img-top" alt="Inventory System" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Inventory Management</h5>
-                                    <p class="card-text">React + Laravel system for stock tracking, alerts, and reports for
+                        <div className="col-md-6 col-lg-4">
+                            <div className="card h-100 shadow-sm">
+                                <img src={myPortfolio6} className="card-img-top" alt="Inventory System" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Inventory Management</h5>
+                                    <p className="card-text">React + Laravel system for stock tracking, alerts, and reports for
                                         retailers.</p>
-                                    <Link to="/inventory-detail" class="btn btn-outline-dark btn-sm">View Details</Link>
+                                    <Link to="/inventory-detail" className="btn btn-outline-dark btn-sm">View Details</Link>
                                 </div>
                             </div>
                         </div>

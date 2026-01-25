@@ -119,36 +119,36 @@ function Contact() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="card shadow-lg border-0 rounded-4 p-4">
-                                <form method="post" onSubmit={handleSubmit} enctype="text/plain">
+                                <form method="post" onSubmit={handleSubmit} encType="text/plain">
                                     <div className="mb-3">
-                                        <label for="name" className="form-label">Your Name</label>
+                                        <label htmlFor="name" className="form-label">Your Name</label>
                                         <input type="text" name="name" onChange={handleInputs} id="name" className="form-control" placeholder="Enter name" />
                                         {errors.name && <small className="text-danger">{errors.name}</small>}
                                     </div>
 
                                     <div className="mb-3">
-                                        <label for="email" className="form-label">Your Email</label>
+                                        <label htmlFor="email" className="form-label">Your Email</label>
                                         <input type="text" name="email" onChange={handleInputs} id="email" className="form-control"
                                             placeholder="Enter email id" />
                                         {errors.email && <small className="text-danger">{errors.email}</small>}
                                     </div>
 
                                     <div className="mb-3">
-                                        <label for="email" className="form-label">Your Phone</label>
+                                        <label htmlFor="email" className="form-label">Your Phone</label>
                                         <input type="text" name="phone" onChange={handleInputs} id="phone" className="form-control"
                                             placeholder="Enter phone number" />
                                         {errors.phone && <small className="text-danger">{errors.phone}</small>}
                                     </div>
 
                                     <div className="mb-3">
-                                        <label for="subject" className="form-label">Subject</label>
+                                        <label htmlFor="subject" className="form-label">Subject</label>
                                         <input type="text" name="subject" onChange={handleInputs} id="subject" className="form-control"
                                             placeholder="Let’s build something great" />
                                         {errors.subject && <small className="text-danger">{errors.subject}</small>}
                                     </div>
 
                                     <div className="mb-4">
-                                        <label for="message" className="form-label">Your Message</label>
+                                        <label htmlFor="message" className="form-label">Your Message</label>
                                         <textarea name="message" onChange={handleInputs} id="message" className="form-control" rows="5"
                                             placeholder="Describe your project or say hello..."></textarea>
                                         {errors.message && <small className="text-danger">{errors.message}</small>}

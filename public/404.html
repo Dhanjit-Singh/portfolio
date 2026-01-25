@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Dhanjit Singh – React, Laravel & Web Development Services</title>
+
+    <!-- Redirect script for GitHub Pages SPA -->
+    <script type="text/javascript">
+        var pathSegmentsToKeep = 0; // Change to 1 if your site is at user.github.io/portfolio/
+
+        var l = window.location;
+        if (l.pathname.indexOf('index.html') === -1) {
+            var p = l.pathname.split('/').slice(1);
+            if (p.length > pathSegmentsToKeep) {
+                l.replace(
+                    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                    '/' + p.slice(0, pathSegmentsToKeep).join('/') +
+                    '/?p=/' + p.slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+                    (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                    l.hash
+                );
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- This file is served when a route is not found on the server -->
+</body>
+
+</html>
