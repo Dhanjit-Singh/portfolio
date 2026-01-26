@@ -9,6 +9,7 @@ function About() {
         <>
             <PageFlip />
             <section className="py-5 bg-white position-relative">
+                <h2 className="section-title text-center mb-4 fw-bold">About Us</h2>
                 <div className="container">
                     <div className="row align-items-center g-5">
 

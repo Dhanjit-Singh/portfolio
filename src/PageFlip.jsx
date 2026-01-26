@@ -4,14 +4,25 @@ import "./PageFlip.css";
 
 // Import your images (adjust paths as needed)
 
-import flipImg1 from "./assets/images/flip-img1.jpeg";
-import flipImg2 from "./assets/images/flip-img2.jpg";
-import flipImg3 from "./assets/images/flip-img3.jpeg";
-import flipImg4 from "./assets/images/flip-img4.jpg";
-import flipImg5 from "./assets/images/flip-img5.jpg";
-import flipImg6 from "./assets/images/flip-img6.jpg";
-import flipImg7 from "./assets/images/flip-img7.jpg";
-import flipImg8 from "./assets/images/flip-img8.jpg";
+// import flipImg1 from "./assets/images/flip-img1.jpeg";
+// import flipImg2 from "./assets/images/flip-img2.jpg";
+// import flipImg3 from "./assets/images/flip-img3.jpeg";
+// import flipImg4 from "./assets/images/flip-img4.jpg";
+// import flipImg5 from "./assets/images/flip-img5.jpg";
+// import flipImg6 from "./assets/images/flip-img6.jpg";
+// import flipImg7 from "./assets/images/flip-img7.jpg";
+// import flipImg8 from "./assets/images/flip-img8.jpg";
+
+import banner1 from "./assets/images/banner1.jpg";
+import banner2 from "./assets/images/banner2.png";
+import banner3 from "./assets/images/banner3.jpg";
+import banner4 from "./assets/images/banner4.jpg";
+import banner5 from "./assets/images/banner5.jpg";
+import banner6 from "./assets/images/banner6.jpg";
+import banner7 from "./assets/images/banner7.jpg";
+import banner8 from "./assets/images/banner8.jpg";
+import banner9 from "./assets/images/banner9.jpg";
+import banner10 from "./assets/images/banner10.jpg";
 
 const Page = React.forwardRef((props, ref) => {
     return (
@@ -72,14 +83,16 @@ const PageFlip = () => {
                 className="album-web"
             >
                 {/* Pages with images - showing 2 images when book opens */}
-                <Page number="1" image={flipImg1} />
-                <Page number="2" image={flipImg2} />
-                <Page number="3" image={flipImg3} />
-                <Page number="4" image={flipImg4} />
-                <Page number="5" image={flipImg5} />
-                <Page number="6" image={flipImg6} />
-                <Page number="7" image={flipImg7} />
-                <Page number="8" image={flipImg8} />
+                <Page number="1" image={banner1} />
+                <Page number="2" image={banner2} />
+                <Page number="3" image={banner3} />
+                <Page number="4" image={banner4} />
+                <Page number="5" image={banner5} />
+                <Page number="6" image={banner6} />
+                <Page number="7" image={banner7} />
+                <Page number="8" image={banner8} />
+                <Page number="9" image={banner9} />
+                <Page number="10" image={banner10} />
 
                 {/* Add empty pages if you want even number for proper spreads */}
                 {/* <Page number="5" /> */}
